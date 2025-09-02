@@ -2,7 +2,7 @@
 import { useState } from "react"
 
 import Navbar from "./Navbar";
-import TopBar from "./Topbar";
+import TopBar from "./TopBar";
 
 const Header = ({ token, setToken }) => {
   return (
