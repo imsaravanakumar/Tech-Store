@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaEnvelope, FaFacebook, FaInstagram, FaPhone, FaTwitter } from 'react-icons/fa6'
 
-const Topbar = () => {
+const TopBar = () => {
   return (
     <div className=' bg-gradient-to-r from-gray-900 via-gray-800 to-black text-white'>
       <div className='container mx-auto flex flex-grow justify-between items-center py-3 px-4'>
@@ -21,4 +21,4 @@ const Topbar = () => {
   )
 }
 
-export default Topbar
+export default TopBar;
