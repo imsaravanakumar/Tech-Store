@@ -45,7 +45,7 @@ const Signup = () => {
               onChange={handleChange}
               value={form.username}
               required
-              className="flex-1 bg-transparent outline-none"
+              className="flex-1 bg-transparent outline-none text-white"
             />
           </div>
 
@@ -58,7 +58,7 @@ const Signup = () => {
               onChange={handleChange}
               value={form.email}
               required
-              className="flex-1 bg-transparent outline-none"
+              className="flex-1 bg-transparent outline-none text-white"
             />
           </div>
 
@@ -71,7 +71,7 @@ const Signup = () => {
               onChange={handleChange}
               value={form.password}
               required
-              className="flex-1 bg-transparent outline-none"
+              className="flex-1 bg-transparent outline-none text-white"
             />
           </div>
 
