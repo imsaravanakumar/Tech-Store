@@ -61,7 +61,7 @@ const Login = ({ setToken }) => {
               value={form.email}
               onChange={handleChange}
               required
-              className="flex-1 bg-transparent outline-none"
+              className="flex-1 bg-transparent outline-none text-white"
             />
           </div>
 
@@ -74,7 +74,7 @@ const Login = ({ setToken }) => {
               value={form.password}
               onChange={handleChange}
               required
-              className="flex-1 bg-transparent outline-none"
+              className="flex-1 bg-transparent outline-none text-white"
             />
           </div>
 
