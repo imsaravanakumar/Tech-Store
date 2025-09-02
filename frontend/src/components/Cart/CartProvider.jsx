@@ -9,7 +9,7 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     const fetchCart = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/cart");
+        const res = await axios.get("https://tech-store-eied.onrender.com/api/cart");
         setCart(res.data);
       } catch (err) {
         console.error("Error fetching cart:", err);
@@ -25,7 +25,7 @@ export const CartProvider = ({ children }) => {
       await increaseQty(item._id);
     } else {
       try {
-        const res = await axios.post("http://localhost:5000/api/cart/add", {
+        const res = await axios.post("https://tech-store-eied.onrender.com/api/cart/add", {
           name: item.name,
           color: item.color,
           price: item.price,
@@ -48,7 +48,7 @@ export const CartProvider = ({ children }) => {
 
   const increaseQty = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/cart/increase/${id}`);
+      await axios.put(`https://tech-store-eied.onrender.com/api/cart/increase/${id}`);
       setCart((prev) =>
         prev.map((item) =>
           item._id === id
@@ -63,7 +63,7 @@ export const CartProvider = ({ children }) => {
 
   const decreaseQty = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/cart/decrease/${id}`);
+      await axios.put(`https://tech-store-eied.onrender.com/api/cart/decrease/${id}`);
       setCart((prev) =>
         prev
           .map((item) =>
@@ -84,7 +84,7 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = async () => {
     try {
-      await axios.delete("http://localhost:5000/api/cart/clear");
+      await axios.delete("https://tech-store-eied.onrender.com/api/cart/clear");
       setCart([]); // Clear state
     } catch (err) {
       console.error("Error clearing cart:", err);
